@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import style from './Home.module.scss';
 import 'react-tabs/style/react-tabs.css';
 import Header from '../../components/Header/Header';
+import FilesUploader from '../../components/FilesUploader/FilesUploader';
 
 const Home: React.FC = () => {
   return (
@@ -15,10 +16,10 @@ const Home: React.FC = () => {
         </TabList>
 
         <TabPanel>
-          <h2>MSDS Converter</h2>
+          <FilesUploader docType="MSDS" />
         </TabPanel>
         <TabPanel>
-          <h2>TDS Converter</h2>
+          <FilesUploader docType="TDS" />
         </TabPanel>
       </Tabs>
     </div>
