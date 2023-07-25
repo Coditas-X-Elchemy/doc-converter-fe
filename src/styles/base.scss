@@ -16,6 +16,26 @@
 
 html body {
   color: $text-color;
+  background-color: $body-background;
   font-family: Roboto-Regular;
   font-size: 16px;
+}
+
+.react-tabs__tab-list {
+  text-align: center;
+  border-bottom: none;
+  li.react-tabs__tab {
+    background-color: transparent;
+    border: none;
+    min-width: 72px;
+    font-size: 18px;
+    &:focus:after {
+      background-color: transparent;
+    }
+    &.react-tabs__tab--selected {
+      font-weight: 600;
+      color: $primary;
+      border-bottom: 3px solid $primary;
+    }
+  }
 }
